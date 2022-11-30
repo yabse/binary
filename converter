@@ -1,1 +1,27 @@
+/*
+                  This code is written by yabsera
+*/
+
+public class countOnes {
+    public static void main(String[] args) {
+        System.out.println(countOnes(9));
+        System.out.println(countOnes(5));
+        System.out.println(countOnes(15));
+    }
+
+    static int countOnes(int n) {
+        int i = n;
+        int result = 0;
+        while (i !=0){
+            if (i % 2 != 0){
+                result = (result * 10)+ 1;
+            }
+            else {
+                result = (result * 10);
+            }
+            i = i / 2;
+        }
+        return result;
+    }
+}
 
